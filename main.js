@@ -1,7 +1,21 @@
 let colores = [];
 colores = Array.from(document.querySelectorAll(".color"));
-generar = document.querySelector("button");
+generar = document.querySelector("#generar");
 generar.addEventListener("click", posicionarColor); //Para asignar el evento al hacerle click al boton
+
+
+copiar = document.querySelectorAll('.copiar');
+copiar.forEach((copiar)=>{
+  copiar.addEventListener('click', ()=>{
+    document.querySelector('#modal').style.display = 'flex';
+  })
+})
+
+//Funcion para cerrar el modal
+cerrar = document.querySelector('#cerrar');
+cerrar.addEventListener('click', ()=>{
+  document.querySelector('#modal').style.display = 'none';
+})
 
 //Llama a la funcion posicionarColor para que se ejecute al cargar la pagina
 posicionarColor();
