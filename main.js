@@ -3,11 +3,27 @@ colores = Array.from(document.querySelectorAll(".color"));
 generar = document.querySelector("#generar");
 generar.addEventListener("click", posicionarColor); //Para asignar el evento al hacerle click al boton
 
-
+//Funcion que abre el modal y copia el color hexadecimal o rgb al portapapeles
 copiar = document.querySelectorAll('.copiar');
 copiar.forEach((copiar)=>{
   copiar.addEventListener('click', ()=>{
+    let hexadecimal = copiar.parentElement.children[0].textContent;
+    let rgb = copiar.parentElement.children[1].textContent;
+
     document.querySelector('#modal').style.display = 'flex';
+
+    let botonHexadecimal = document.querySelector('#hexadecimal');
+    let botonrgb = document.querySelector('#rgb');
+
+    botonHexadecimal.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(hexadecimal);
+      alert('Copiado hexadecimal');
+    });
+
+    botonrgb.addEventListener('click', ()=>{
+      navigator.clipboard.writeText(rgb);
+      alert('Copiado rgb');
+    });
   })
 })
 
