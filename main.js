@@ -15,15 +15,18 @@ copiar.forEach((copiar)=>{
     let botonHexadecimal = document.querySelector('#hexadecimal');
     let botonrgb = document.querySelector('#rgb');
 
-    botonHexadecimal.addEventListener('click', ()=>{
+    //Uso el onclick para asignar el evento y que no se acumulen multiples eventos
+    botonHexadecimal.onclick = () => {
       navigator.clipboard.writeText(hexadecimal);
       alert('Copiado hexadecimal');
-    });
+      document.querySelector('#modal').style.display = 'none';
+    };
 
-    botonrgb.addEventListener('click', ()=>{
+    botonrgb.onclick = () => {
       navigator.clipboard.writeText(rgb);
       alert('Copiado rgb');
-    });
+      document.querySelector('#modal').style.display = 'none';
+    };
   })
 })
 

@@ -127,3 +127,65 @@ body{
 #cerrar:hover{
   background-color: darkred;
 }
+
+/*RESPONSIVE
+=================================================================
+Escritorios muy grandes
+-----------------------------------------------------------------*/
+@media (min-width: 1200px) { }
+
+/*Tablets en horizontal y escritorios normales
+-----------------------------------------------------------------*/
+@media (min-width: 760px) and (max-width: 1199px) {
+  #mensaje{
+    font-size: 2rem;
+  }
+
+  #botones button{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #mensaje{
+    font-size: 1.5rem;
+  }
+
+  #botones button{
+    padding: 0.2rem;
+    font-size: 0.7rem;
+  }
+
+  .color{
+    font-size: 0.8rem;
+  }
+}
+
+/*Moviles en vertical
+-----------------------------------------------------------------*/
+@media (max-width: 480px){ 
+  #mensaje{
+    font-size: 1rem;
+  }
+
+  #botones{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #botones button{
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+
+  .color{
+    font-size: 0.8rem;
+  }
+
+  #generar{
+    width: 15rem;
+    height: 2rem;
+  }
+}
