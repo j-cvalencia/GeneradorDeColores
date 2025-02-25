@@ -13,7 +13,7 @@ Aplicación web que genera colores aleatorios y permite copiarlos en formato **h
 - JavaScript (Vanilla JS)
 
 ## 📂 Instalación y Uso  
-1. Clona este repositorio:  
-- git clone https://github.com/tuusuario/generador-colores.git
-2.Abre el archivo index.html en tu navegador.
-3.Haz clic en "Generar"
+  1. Clona este repositorio:  
+- git clone https://github.com/j-cvalencia/generador-colores.git
+  2.Abre el archivo index.html en tu navegador
+  3.Haz clic en "Generar"
