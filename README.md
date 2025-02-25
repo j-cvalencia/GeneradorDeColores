@@ -14,6 +14,6 @@ Aplicación web que genera colores aleatorios y permite copiarlos en formato **h
 
 ## 📂 Instalación y Uso  
   1. Clona este repositorio:  
-- git clone https://github.com/j-cvalencia/generador-colores.git
+- git clone https://github.com/j-cvalencia/GeneradorDeColores.git
   2.Abre el archivo index.html en tu navegador
   3.Haz clic en "Generar"
